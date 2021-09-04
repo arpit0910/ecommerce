@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\SubCategoryController;
+use App\Http\Controllers\BrandController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -23,10 +24,17 @@ Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth'])->name('dashboard');
 
+// Category Routes
 Route::resource('category', CategoryController::class);
 Route::post('category/toggleStatus', [CategoryController::class, 'toggleStatus'])->name('category.toggleStatus');
+
+// Sub Category Routes
 Route::resource('subcategory', SubCategoryController::class);
 Route::post('subcategory/toggleStatus', [SubCategoryController::class, 'toggleStatus'])->name('subcategory.toggleStatus');
+
+//Brand Routes
+Route::resource('brand', BrandController::class);
+Route::post('brand/toggleStatus', [BrandController::class, 'toggleStatus'])->name('brand.toggleStatus');
 
 
 require __DIR__ . '/auth.php';
