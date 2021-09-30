@@ -27,6 +27,19 @@
                             </li>
                         </ul><!-- .nk-menu-sub -->
                     </li><!-- .nk-menu-item -->
+                    <li class="nk-menu-item">
+                        <a href="{{route('brand.index')}}" class="nk-menu-link">
+                            <span class="nk-menu-icon"><em class="icon ni ni-tag"></em></span>
+                            <span class="nk-menu-text">Brands</span>
+                        </a>
+                    </li><!-- .nk-menu-item -->
+                    <li class="nk-menu-item">
+                        <a href="{{route('promocode.index')}}" class="nk-menu-link">
+                            <span class="nk-menu-icon"><em class="icon ni ni-google-wallet"></em></span>
+                            <span class="nk-menu-text">Promocodes</span>
+                        </a>
+                    </li><!-- .nk-menu-item -->
+                    
                 </ul><!-- .nk-menu-sub -->
             </div><!-- .nk-sidebar-menu -->
         </div><!-- .nk-sidebar-content -->
