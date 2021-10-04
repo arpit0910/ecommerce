@@ -3,6 +3,7 @@
 use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\SubCategoryController;
 use App\Http\Controllers\BrandController;
+use App\Http\Controllers\ProductController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -36,5 +37,8 @@ Route::post('subcategory/toggleStatus', [SubCategoryController::class, 'toggleSt
 Route::resource('brand', BrandController::class);
 Route::post('brand/toggleStatus', [BrandController::class, 'toggleStatus'])->name('brand.toggleStatus');
 
+//Product Routes
+Route::resource('product', ProductController::class);
+Route::post('product/toggleStatus', [ProductController::class, 'toggleStatus'])->name('product.toggleStatus');
 
 require __DIR__ . '/auth.php';
