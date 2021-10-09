@@ -3,6 +3,7 @@
 use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\SubCategoryController;
 use App\Http\Controllers\BrandController;
+use App\Http\Controllers\HeaderSliderController;
 use App\Http\Controllers\PromocodeController;
 use Illuminate\Support\Facades\Route;
 
@@ -40,5 +41,8 @@ Route::post('brand/toggleStatus', [BrandController::class, 'toggleStatus'])->nam
 //Promocodes Routes
 Route::resource('promocode', PromocodeController::class);
 Route::post('promocode/toggleStatus', [PromocodeController::class, 'toggleStatus'])->name('promocode.toggleStatus');
+
+// Header Slider Route
+Route::resource('header-slider', HeaderSliderController::class);
 
 require __DIR__ . '/auth.php';
