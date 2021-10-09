@@ -15,7 +15,7 @@ class PromocodeController extends Controller
     public function index()
     {
         $promocodes = Promocode::all();
-        return view('promocode.index',compact('promocodes'));
+        return view('promocode.index', compact('promocodes'));
     }
 
     /**
@@ -37,7 +37,7 @@ class PromocodeController extends Controller
     public function store(Request $request)
     {
         $promocode = Promocode::create($request->all());
-        return redirect(route('promocode.index'))->with('message','Promocode created successfully');
+        return redirect(route('promocode.index'))->with('message', 'Promocode created successfully');
     }
 
     /**
@@ -59,8 +59,8 @@ class PromocodeController extends Controller
      */
     public function edit($id)
     {
-        $promocode = Promocode::where('id',$id)->first();
-        return view('promocode.edit',compact('promocode'));
+        $promocode = Promocode::where('id', $id)->first();
+        return view('promocode.edit', compact('promocode'));
     }
 
     /**
@@ -72,9 +72,25 @@ class PromocodeController extends Controller
      */
     public function update(Request $request, $id)
     {
-        
+        $promocode = Promocode::where('id', $id)->first();
+        if ($promocode) {
+            $promocode->code = $request->code;
+            $promocode->description = $request->description;
+            $promocode->start_date = $request->start_date;
+            $promocode->end_date = $request->end_date;
+            $promocode->min_order_amount = $request->min_order_amount;
+            $promocode->discount_amount = $request->discount_amount;
+            $promocode->discount_type = $request->discount_type;
+            $promocode->maximum_discount = $request->maximum_discount;
+            if ($promocode->update()) {
+                return redirect(route('promocode.index'))->with('message', 'Promocode updated successfully');
+            } else {
+                return redirect(route('promocode.index'))->with('error', 'An error occured. Please try again.');
+            }
+        } else {
+            return redirect(route('promocode.index'))->with('error', 'An error occured. Please try again.');
+        }
     }
-
     /**
      * Remove the specified resource from storage.
      *
