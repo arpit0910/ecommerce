@@ -49,6 +49,7 @@ class BrandController extends Controller
                 "name" => $request->name,
                 "image" => $imagename,
             ]);
+
             $brand->save();
             return redirect(route('brand.index'))->with('message', 'Brand created successfully');
         }

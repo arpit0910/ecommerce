@@ -9,7 +9,7 @@
     <div class="card-inner p-2">
         <form action="{{route('subcategory.update', $subCategory->id)}}" method="post" enctype="multipart/form-data">
             @csrf
-            @method('patch')
+            @method('patch')                                                                                        
             <div class="form-group">
                 <label class="form-label" for="name">Category</label>
                 <div class="form-control-wrap">
