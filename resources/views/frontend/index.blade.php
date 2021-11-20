@@ -2,6 +2,191 @@
 @section('content')
 <!-- Carousel Cards -->
 <div class="main-wrapper">
+    <div class="slider-area pt-25">
+        <div class="container-fluid">
+            <div class="hero-slider-active-2 nav-style-1 nav-style-1-modify nav-style-1-blue bg-gray-7 mb-5">
+                <div class="single-hero-slider slider-height-3 custom-d-flex custom-align-item-center single-animation-wrap">
+                    <div class="row align-items-center slider-animated-1 m-auto">
+                        <div class="col-lg-6 col-md-6 col-12 col-sm-6">
+                            <div class="hero-slider-content-5">
+                                <h5 class="animated">Best Seller</h5>
+                                <h1 class="animated">Norda QLED <br>TV 43 Inch</h1>
+                                <p class="animated">Discover our collection with leather simple backpacks. Less is more never out trend.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-12 col-sm-6">
+                            <div class="hm7-hero-slider-img">
+                                <img class="animated" src="assets/images/slider/hm-7-slider-1.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="single-hero-slider slider-height-3 custom-d-flex custom-align-item-center single-animation-wrap">
+                    <div class="row align-items-center slider-animated-1 m-auto">
+                        <div class="col-lg-6 col-md-6 col-12 col-sm-6">
+                            <div class="hero-slider-content-5">
+                                <h5 class="animated">Best Seller</h5>
+                                <h1 class="animated">Norda QLED <br>TV 43 Inch</h1>
+                                <p class="animated">Discover our collection with leather simple backpacks. Less is more never out trend.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-12 col-sm-6">
+                            <div class="hm7-hero-slider-img">
+                                <img class="animated" src="assets/images/slider/hm-7-slider-1.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="service-area">
+        <div class="container">
+            <div class="service-wrap service-wrap-hm9">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+                        <div class="single-service-wrap mb-30">
+                            <div class="service-icon service-icon-blue">
+                                <i class="icon-cursor"></i>
+                            </div>
+                            <div class="service-content">
+                                <h3>Free Shipping</h3>
+                                <span>Orders over $100</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+                        <div class="single-service-wrap mb-30">
+                            <div class="service-icon service-icon-blue">
+                                <i class="icon-reload"></i>
+                            </div>
+                            <div class="service-content">
+                                <h3>Free Returns</h3>
+                                <span>Within 30 days</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+                        <div class="single-service-wrap mb-30">
+                            <div class="service-icon service-icon-blue">
+                                <i class="icon-lock"></i>
+                            </div>
+                            <div class="service-content">
+                                <h3>100% Secure</h3>
+                                <span>Payment Online</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+                        <div class="single-service-wrap mb-30">
+                            <div class="service-icon service-icon-blue">
+                                <i class="icon-tag"></i>
+                            </div>
+                            <div class="service-content">
+                                <h3>Best Price</h3>
+                                <span>Guaranteed</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="product-categories-area pb-115">
+        <div class="container">
+            <div class="section-title-btn-wrap border-bottom-3 mb-50 pb-20">
+                <div class="section-title-3">
+                    <h2>Popular Categories</h2>
+                </div>
+            </div>
+            <div class="product-categories-slider-1 nav-style-3">
+                <div class="product-plr-1">
+                    <div class="single-product-wrap">
+                        <div class="product-img product-img-border mb-20">
+                            <a href="shop.html">
+                                <img src="assets/images/product/product-50.png" alt="">
+                            </a>
+                        </div>
+                        <div class="product-content-categories-2 text-center">
+                            <h5><a href="shop.html">Fashion</a></h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-plr-1">
+                    <div class="single-product-wrap">
+                        <div class="product-img product-img-border mb-20">
+                            <a href="shop.html">
+                                <img src="assets/images/product/product-51.png" alt="">
+                            </a>
+                        </div>
+                        <div class="product-content-categories-2 text-center">
+                            <h5><a href="shop.html">Electronic</a></h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-plr-1">
+                    <div class="single-product-wrap">
+                        <div class="product-img product-img-border mb-20">
+                            <a href="shop.html">
+                                <img src="assets/images/product/product-52.png" alt="">
+                            </a>
+                        </div>
+                        <div class="product-content-categories-2 text-center">
+                            <h5><a href="shop.html">computer</a></h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-plr-1">
+                    <div class="single-product-wrap">
+                        <div class="product-img product-img-border mb-20">
+                            <a href="shop.html">
+                                <img src="assets/images/product/product-53.png" alt="">
+                            </a>
+                        </div>
+                        <div class="product-content-categories-2 text-center">
+                            <h5><a href="shop.html">beauty</a></h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-plr-1">
+                    <div class="single-product-wrap">
+                        <div class="product-img product-img-border mb-20">
+                            <a href="shop.html">
+                                <img src="assets/images/product/product-54.png" alt="">
+                            </a>
+                        </div>
+                        <div class="product-content-categories-2 text-center">
+                            <h5><a href="shop.html">sport</a></h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-plr-1">
+                    <div class="single-product-wrap">
+                        <div class="product-img product-img-border mb-20">
+                            <a href="shop.html">
+                                <img src="assets/images/product/product-55.png" alt="">
+                            </a>
+                        </div>
+                        <div class="product-content-categories-2 text-center">
+                            <h5><a href="shop.html">baby</a></h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-plr-1">
+                    <div class="single-product-wrap">
+                        <div class="product-img product-img-border mb-20">
+                            <a href="shop.html">
+                                <img src="assets/images/product/product-52.png" alt="">
+                            </a>
+                        </div>
+                        <div class="product-content-categories-2 text-center">
+                            <h5><a href="shop.html">computer</a></h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="product-area section-padding-1 pt-115 pb-75">
         <div class="container-fluid">
             <div class="tab-content jump">

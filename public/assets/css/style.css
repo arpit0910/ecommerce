@@ -3848,7 +3848,7 @@ textarea:focus {
 .main-wrapper.overlay-active .body-overlay {
   opacity: .7;
   visibility: visible;
-  z-index: 9999;
+  z-index: 99;
 }
 
 .sidebar-cart-active {
@@ -7642,15 +7642,15 @@ textarea:focus {
 /*-------- 5. Service style ---------*/
 .service-wrap {
   background-color: #ffffff;
-  margin-top: -100px;
+  /* margin-top: -100px; */
   position: relative;
   z-index: 1;
   padding: 51px 0 25px;
 }
 
-.service-wrap.service-wrap-hm9 {
+/* .service-wrap.service-wrap-hm9 {
   margin-top: -70px;
-}
+} */
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .service-wrap.service-wrap-hm9 {
