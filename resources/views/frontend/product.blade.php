@@ -1,6 +1,18 @@
 @extends('frontend.layouts.main')
 @section('content')
 <div class="main-wrapper">
+    <!-- <div class="breadcrumb-area bg-gray">
+        <div class="container">
+            <div class="breadcrumb-content text-center">
+                <ul>
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li class="active">product details </li>
+                </ul>
+            </div>
+        </div>
+    </div> -->
     <div class="product-details-area pt-120 pb-115">
         <div class="container">
             <div class="row">
@@ -37,7 +49,7 @@
                                         <img src="{{asset('assets/images/product-details/large-4.jpg')}}" alt="">
                                     </a>
                                 </div>
-                                <a class="easyzoom-pop-up img-popup" href="{{asset('assets/images/product-details/b-large-4.jpg')}}"><i class="icon-size-fullscreen"></i></a>
+                                <a class="easyzoom-pop-up img-popup" href="assets/images/product-details/b-large-4.jpg')}}"><i class="icon-size-fullscreen"></i></a>
                             </div>
                             <div class="easyzoom-style">
                                 <div class="easyzoom easyzoom--overlay">
@@ -326,206 +338,7 @@
                     <div class="single-product-wrap">
                         <div class="product-img product-img-zoom mb-15">
                             <a href="product-details.html">
-                                <img src="{{asset('assets/images/product/product-13.jpg')}}" alt="">
-                            </a>
-                            <div class="product-action-2 tooltip-style-2">
-                                <button title="Wishlist"><i class="icon-heart"></i></button>
-                                <button title="Quick View" data-toggle="modal" data-target="#exampleModal"><i class="icon-size-fullscreen icons"></i></button>
-                                <button title="Compare"><i class="icon-refresh"></i></button>
-                            </div>
-                        </div>
-                        <div class="product-content-wrap-2 text-center">
-                            <div class="product-rating-wrap">
-                                <div class="product-rating">
-                                    <i class="icon_star"></i>
-                                    <i class="icon_star"></i>
-                                    <i class="icon_star"></i>
-                                    <i class="icon_star"></i>
-                                    <i class="icon_star gray"></i>
-                                </div>
-                                <span>(2)</span>
-                            </div>
-                            <h3><a href="product-details.html">Basic Joggin Shorts</a></h3>
-                            <div class="product-price-2">
-                                <span>$20.50</span>
-                            </div>
-                        </div>
-                        <div class="product-content-wrap-2 product-content-position text-center">
-                            <div class="product-rating-wrap">
-                                <div class="product-rating">
-                                    <i class="icon_star"></i>
-                                    <i class="icon_star"></i>
-                                    <i class="icon_star"></i>
-                                    <i class="icon_star"></i>
-                                    <i class="icon_star gray"></i>
-                                </div>
-                                <span>(2)</span>
-                            </div>
-                            <h3><a href="product-details.html">Basic Joggin Shorts</a></h3>
-                            <div class="product-price-2">
-                                <span>$20.50</span>
-                            </div>
-                            <div class="pro-add-to-cart">
-                                <button title="Add to Cart">Add To Cart</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="product-plr-1">
-                    <div class="single-product-wrap">
-                        <div class="product-img product-img-zoom mb-15">
-                            <a href="product-details.html">
-                                <img src="{{asset('assets/images/product/product-14.jpg')}}" alt="">
-                            </a>
-                            <span class="pro-badge left bg-red">-20%</span>
-                            <div class="product-action-2 tooltip-style-2">
-                                <button title="Wishlist"><i class="icon-heart"></i></button>
-                                <button title="Quick View" data-toggle="modal" data-target="#exampleModal"><i class="icon-size-fullscreen icons"></i></button>
-                                <button title="Compare"><i class="icon-refresh"></i></button>
-                            </div>
-                        </div>
-                        <div class="product-content-wrap-2 text-center">
-                            <div class="product-rating-wrap">
-                                <div class="product-rating">
-                                    <i class="icon_star"></i>
-                                    <i class="icon_star"></i>
-                                    <i class="icon_star"></i>
-                                    <i class="icon_star"></i>
-                                    <i class="icon_star gray"></i>
-                                </div>
-                                <span>(2)</span>
-                            </div>
-                            <h3><a href="product-details.html">Make Thing Happen T-Shirt</a></h3>
-                            <div class="product-price-2">
-                                <span class="new-price">$35.45</span>
-                                <span class="old-price">$45.80</span>
-                            </div>
-                        </div>
-                        <div class="product-content-wrap-2 product-content-position text-center">
-                            <div class="product-rating-wrap">
-                                <div class="product-rating">
-                                    <i class="icon_star"></i>
-                                    <i class="icon_star"></i>
-                                    <i class="icon_star"></i>
-                                    <i class="icon_star"></i>
-                                    <i class="icon_star gray"></i>
-                                </div>
-                                <span>(2)</span>
-                            </div>
-                            <h3><a href="product-details.html">Make Thing Happen T-Shirt</a></h3>
-                            <div class="product-price-2">
-                                <span class="new-price">$35.45</span>
-                                <span class="old-price">$45.80</span>
-                            </div>
-                            <div class="pro-add-to-cart">
-                                <button title="Add to Cart">Add To Cart</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="product-plr-1">
-                    <div class="single-product-wrap">
-                        <div class="product-img product-img-zoom mb-15">
-                            <a href="product-details.html">
-                                <img src="{{asset('assets/images/product/product-15.jpg')}}" alt="">
-                            </a>
-                            <div class="product-action-2 tooltip-style-2">
-                                <button title="Wishlist"><i class="icon-heart"></i></button>
-                                <button title="Quick View" data-toggle="modal" data-target="#exampleModal"><i class="icon-size-fullscreen icons"></i></button>
-                                <button title="Compare"><i class="icon-refresh"></i></button>
-                            </div>
-                        </div>
-                        <div class="product-content-wrap-2 text-center">
-                            <div class="product-rating-wrap">
-                                <div class="product-rating">
-                                    <i class="icon_star"></i>
-                                    <i class="icon_star"></i>
-                                    <i class="icon_star"></i>
-                                    <i class="icon_star"></i>
-                                    <i class="icon_star gray"></i>
-                                </div>
-                                <span>(2)</span>
-                            </div>
-                            <h3><a href="product-details.html">Basic White Simple Sneaker</a></h3>
-                            <div class="product-price-2">
-                                <span>$35.45</span>
-                            </div>
-                        </div>
-                        <div class="product-content-wrap-2 product-content-position text-center">
-                            <div class="product-rating-wrap">
-                                <div class="product-rating">
-                                    <i class="icon_star"></i>
-                                    <i class="icon_star"></i>
-                                    <i class="icon_star"></i>
-                                    <i class="icon_star"></i>
-                                    <i class="icon_star gray"></i>
-                                </div>
-                                <span>(2)</span>
-                            </div>
-                            <h3><a href="product-details.html">Basic White Simple Sneaker</a></h3>
-                            <div class="product-price-2">
-                                <span>$35.45</span>
-                            </div>
-                            <div class="pro-add-to-cart">
-                                <button title="Add to Cart">Add To Cart</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="product-plr-1">
-                    <div class="single-product-wrap">
-                        <div class="product-img product-img-zoom mb-15">
-                            <a href="product-details.html">
-                                <img src="{{asset('assets/images/product/product-18.jpg')}}" alt="">
-                            </a>
-                            <div class="product-action-2 tooltip-style-2">
-                                <button title="Wishlist"><i class="icon-heart"></i></button>
-                                <button title="Quick View" data-toggle="modal" data-target="#exampleModal"><i class="icon-size-fullscreen icons"></i></button>
-                                <button title="Compare"><i class="icon-refresh"></i></button>
-                            </div>
-                        </div>
-                        <div class="product-content-wrap-2 text-center">
-                            <div class="product-rating-wrap">
-                                <div class="product-rating">
-                                    <i class="icon_star"></i>
-                                    <i class="icon_star"></i>
-                                    <i class="icon_star"></i>
-                                    <i class="icon_star"></i>
-                                    <i class="icon_star gray"></i>
-                                </div>
-                                <span>(2)</span>
-                            </div>
-                            <h3><a href="product-details.html">Tie-up Sute Sandals</a></h3>
-                            <div class="product-price-2">
-                                <span>$55.50</span>
-                            </div>
-                        </div>
-                        <div class="product-content-wrap-2 product-content-position text-center">
-                            <div class="product-rating-wrap">
-                                <div class="product-rating">
-                                    <i class="icon_star"></i>
-                                    <i class="icon_star"></i>
-                                    <i class="icon_star"></i>
-                                    <i class="icon_star"></i>
-                                    <i class="icon_star gray"></i>
-                                </div>
-                                <span>(2)</span>
-                            </div>
-                            <h3><a href="product-details.html">Tie-up Sute Sandals</a></h3>
-                            <div class="product-price-2">
-                                <span>$55.50</span>
-                            </div>
-                            <div class="pro-add-to-cart">
-                                <button title="Add to Cart">Add To Cart</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="product-plr-1">
-                    <div class="single-product-wrap">
-                        <div class="product-img product-img-zoom mb-15">
-                            <a href="product-details.html">
-                                <img src="assets/images/product/product-19.jpg" alt="">
+                                <img src="{{asset('assets/images/product/product-19.jpg')}}" alt="">
                             </a>
                             <div class="product-action-2 tooltip-style-2">
                                 <button title="Wishlist"><i class="icon-heart"></i></button>
@@ -599,7 +412,7 @@
                             </div>
                             <div class="quickview-wrap mt-15">
                                 <div class="quickview-slide-active nav-style-6">
-                                    <a class="active" data-toggle="tab" href="#pro-1"><img src="assets/images/product/quickview-s1.jpg" alt=""></a>
+                                    <a class="active" data-toggle="tab" href="#pro-1"><img src="{{asset('assets/images/product/quickview-s1.jpg')}}" alt=""></a>
                                     <a data-toggle="tab" href="#pro-2"><img src="{{asset('assets/images/product/quickview-s2.jpg')}}" alt=""></a>
                                     <a data-toggle="tab" href="#pro-3"><img src="{{asset('assets/images/product/quickview-s3.jpg')}}" alt=""></a>
                                     <a data-toggle="tab" href="#pro-4"><img src="{{asset('assets/images/product/quickview-s2.jpg')}}" alt=""></a>

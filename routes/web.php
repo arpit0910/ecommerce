@@ -27,6 +27,23 @@ Route::get('/product/index', function () {
     return view('frontend.product');
 });
 
+Route::get('/cart', function () {
+    return view('frontend.cart');
+});
+
+Route::get('/contact-us', function () {
+    return view('frontend.contact');
+});
+
+Route::get('/whishlist', function () {
+    return view('frontend.whishlist');
+});
+
+Route::get('/shop', function () {
+    return view('frontend.shop');
+});
+
+
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth'])->name('dashboard');
