@@ -3,6 +3,7 @@
 use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\SubCategoryController;
 use App\Http\Controllers\BrandController;
+use App\Http\Controllers\FrontendController;
 use App\Http\Controllers\HeaderSliderController;
 use App\Http\Controllers\PromocodeController;
 use App\Http\Controllers\ProductController;
@@ -19,30 +20,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('frontend.index');
-});
-
-Route::get('/product/index', function () {
-    return view('frontend.product');
-});
-
-Route::get('/cart', function () {
-    return view('frontend.cart');
-});
-
-Route::get('/contact-us', function () {
-    return view('frontend.contact');
-});
-
-Route::get('/whishlist', function () {
-    return view('frontend.whishlist');
-});
-
-Route::get('/shop', function () {
-    return view('frontend.shop');
-});
-
+Route::get('/', [FrontendController::class, 'index'])->name('frontend.index');
+Route::get('/product-index', [FrontendController::class, 'product'])->name('frontend.product');
+Route::get('/shop', [FrontendController::class, 'shop'])->name('frontend.shop');
+Route::get('/wishlist', [FrontendController::class, 'wishlist'])->name('frontend.wishlist');
+Route::get('/contact-us', [FrontendController::class, 'contact'])->name('frontend.contact');
+Route::get('/cart', [FrontendController::class, 'cart'])->name('frontend.cart');
 
 Route::get('/dashboard', function () {
     return view('dashboard');

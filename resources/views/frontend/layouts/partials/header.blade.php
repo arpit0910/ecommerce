@@ -6,7 +6,7 @@
                 <div class="row align-items-center">
                     <div class="col-xl-2 col-lg-2">
                         <div class="logo">
-                            <a href="index.html"><img src="{{asset('assets/images/logo/logo-3.png')}}" alt="logo"></a>
+                            <a href="{{route('frontend.index')}}"><img src="{{asset('assets/images/logo/logo-3.png')}}" alt="logo"></a>
                         </div>
                     </div>
                     <div class="col-xl-7 col-lg-7">
@@ -34,7 +34,7 @@
                                 <a href="login-register.html"><i class="icon-user"></i></a>
                             </div>
                             <div class="same-style-2 same-style-2-white same-style-2-hover-black same-style-2-font-inc">
-                                <a href="wishlist.html"><i class="icon-heart"></i><span class="pro-count black">03</span></a>
+                                <a href="{{route('frontend.wishlist')}}"><i class="icon-heart"></i><span class="pro-count black">03</span></a>
                             </div>
                             <div class="same-style-2 same-style-2-white same-style-2-hover-black same-style-2-font-inc header-cart">
                                 <a class="cart-active" href="#">
@@ -54,9 +54,9 @@
                         <div class="main-menu main-menu-white main-menu-font-size-14 main-menu-padding-3 main-menu-lh-5 main-menu-hover-black">
                             <nav>
                                 <ul>
-                                    <li><a href="index.html">HOME <i class="icon-arrow-down"></i></a>
+                                    <li><a href="{{route('frontend.index')}}">HOME <i class="icon-arrow-down"></i></a>
                                         <ul class="sub-menu-style">
-                                            <li><a href="index.html">Home version 1 </a></li>
+                                            <li><a href="{{route('frontend.index')}}">Home version 1 </a></li>
                                             <li><a href="index-2.html">Home version 2</a></li>
                                             <li><a href="index-3.html">Home version 3</a></li>
                                             <li><a href="index-4.html">Home version 4</a></li>
@@ -106,12 +106,12 @@
                                     <li><a href="#">PAGES <i class="icon-arrow-down"></i> </a>
                                         <ul class="sub-menu-style">
                                             <li><a href="about-us.html">about us </a></li>
-                                            <li><a href="cart.html">cart page</a></li>
+                                            <li><a href="{{route('frontend.cart')}}">cart page</a></li>
                                             <li><a href="checkout.html">checkout </a></li>
                                             <li><a href="my-account.html">my account</a></li>
-                                            <li><a href="wishlist.html">wishlist </a></li>
+                                            <li><a href="{{route('frontend.wishlist')}}">wishlist </a></li>
                                             <li><a href="compare.html">compare </a></li>
-                                            <li><a href="contact.html">contact us </a></li>
+                                            <li><a href="{{route('frontend.contact')}}">contact us </a></li>
                                             <li><a href="order-tracking.html">order tracking</a></li>
                                             <li><a href="login-register.html">login / register </a></li>
                                         </ul>
@@ -124,7 +124,7 @@
                                             <li><a href="blog-details.html">blog details</a></li>
                                         </ul>
                                     </li>
-                                    <li><a href="contact.html">CONTACT </a></li>
+                                    <li><a href="{{route('frontend.contact')}}>CONTACT </a></li>
                                     <li><a href="shop.html">ELECTRONICS </a></li>
                                     <li><a href="shop.html">TVS & APPLIANCES </a></li>
                                     <li><a href="shop.html">MEN </a></li>
@@ -141,8 +141,8 @@
             <div class="row align-items-center">
                 <div class="col-5">
                     <div class="mobile-logo">
-                        <a href="index.html">
-                            <img alt="" src="{{asset('assets/images/logo/logo-3.png">
+                        <a href="{{route('frontend.index')}}">
+                            <img alt="" src="{{asset('assets/images/logo/logo-3.png')}}">
                         </a>
                     </div>
                 </div>
@@ -152,7 +152,7 @@
                             <a href="login-register.html"><i class="icon-user"></i></a>
                         </div>
                         <div class="same-style-2 same-style-2-white same-style-2-hover-black same-style-2-font-inc">
-                            <a href="wishlist.html"><i class="icon-heart"></i><span class="pro-count black">03</span></a>
+                            <a href="{{route('frontend.wishlist')}}"><i class="icon-heart"></i><span class="pro-count black">03</span></a>
                         </div>
                         <div class="same-style-2 same-style-2-white same-style-2-hover-black same-style-2-font-inc header-cart">
                             <a class="cart-active" href="#">
@@ -183,9 +183,9 @@
                 <!-- mobile menu start -->
                 <nav>
                     <ul class="mobile-menu">
-                        <li class="menu-item-has-children"><a href="index.html">Home</a>
+                        <li class="menu-item-has-children"><a href="{{route('frontend.index')}}">Home</a>
                             <ul class="dropdown">
-                                <li><a href="index.html">Home version 1 </a></li>
+                                <li><a href="{{route('frontend.index')}}">Home version 1 </a></li>
                                 <li><a href="index-2.html">Home version 2</a></li>
                                 <li><a href="index-3.html">Home version 3</a></li>
                                 <li><a href="index-4.html">Home version 4</a></li>
@@ -226,12 +226,12 @@
                         <li class="menu-item-has-children"><a href="#">Pages</a>
                             <ul class="dropdown">
                                 <li><a href="about-us.html">about us </a></li>
-                                <li><a href="cart.html">cart page</a></li>
+                                <li><a href="{{route('frontend.cart')}}">cart page</a></li>
                                 <li><a href="checkout.html">checkout </a></li>
                                 <li><a href="my-account.html">my account</a></li>
-                                <li><a href="wishlist.html">wishlist </a></li>
+                                <li><a href="{{route('frontend.wishlist')}}">wishlist </a></li>
                                 <li><a href="compare.html">compare </a></li>
-                                <li><a href="contact.html">contact us </a></li>
+                                <li><a href="{{route('frontend.contact')}}">contact us </a></li>
                                 <li><a href="order-tracking.html">order tracking</a></li>
                                 <li><a href="login-register.html">login / register </a></li>
                             </ul>
@@ -244,7 +244,7 @@
                                 <li><a href="blog-details.html">blog details</a></li>
                             </ul>
                         </li>
-                        <li><a href="contact.html">Contact us</a></li>
+                        <li><a href="{{route('frontend.contact')}}">Contact us</a></li>
                     </ul>
                 </nav>
                 <!-- mobile menu end -->
@@ -294,7 +294,7 @@
                 <h4>Subtotal: <span>$170.00</span></h4>
             </div>
             <div class="cart-checkout-btn">
-                <a class="btn-hover cart-btn-style" href="cart.html">view cart</a>
+                <a class="btn-hover cart-btn-style" href="{{route('frontend.cart')}}">view cart</a>
                 <a class="no-mrg btn-hover cart-btn-style" href="checkout.html">checkout</a>
             </div>
         </div>
