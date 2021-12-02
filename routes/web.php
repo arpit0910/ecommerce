@@ -25,7 +25,11 @@ Route::get('/product-index', [FrontendController::class, 'product'])->name('fron
 Route::get('/shop', [FrontendController::class, 'shop'])->name('frontend.shop');
 Route::get('/wishlist', [FrontendController::class, 'wishlist'])->name('frontend.wishlist');
 Route::get('/contact-us', [FrontendController::class, 'contact'])->name('frontend.contact');
+Route::get('/about-us', [FrontendController::class, 'aboutUs'])->name('frontend.aboutUs');
 Route::get('/cart', [FrontendController::class, 'cart'])->name('frontend.cart');
+Route::get('/checkout', [FrontendController::class, 'checkout'])->name('frontend.checkout');
+Route::get('/profile', [FrontendController::class, 'profile'])->name('frontend.profile');
+Route::get('/order-tracking', [FrontendController::class, 'orderTracking'])->name('frontend.orderTracking');
 
 Route::get('/dashboard', function () {
     return view('dashboard');

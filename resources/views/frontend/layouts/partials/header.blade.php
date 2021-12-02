@@ -31,7 +31,7 @@
                     <div class="col-xl-3 col-lg-3">
                         <div class="header-action header-action-flex">
                             <div class="same-style-2 same-style-2-white same-style-2-hover-black same-style-2-font-inc">
-                                <a href="login-register.html"><i class="icon-user"></i></a>
+                                <a href="{{route('frontend.profile')}}"><i class="icon-user"></i></a>
                             </div>
                             <div class="same-style-2 same-style-2-white same-style-2-hover-black same-style-2-font-inc">
                                 <a href="{{route('frontend.wishlist')}}"><i class="icon-heart"></i><span class="pro-count black">03</span></a>
@@ -105,15 +105,15 @@
                                     </li>
                                     <li><a href="#">PAGES <i class="icon-arrow-down"></i> </a>
                                         <ul class="sub-menu-style">
-                                            <li><a href="about-us.html">about us </a></li>
+                                            <li><a href="{{route('frontend.aboutUs')}}">about us </a></li>
                                             <li><a href="{{route('frontend.cart')}}">cart page</a></li>
-                                            <li><a href="checkout.html">checkout </a></li>
+                                            <li><a href="{{route('frontend.checkout')}}">checkout </a></li>
                                             <li><a href="my-account.html">my account</a></li>
                                             <li><a href="{{route('frontend.wishlist')}}">wishlist </a></li>
                                             <li><a href="compare.html">compare </a></li>
                                             <li><a href="{{route('frontend.contact')}}">contact us </a></li>
-                                            <li><a href="order-tracking.html">order tracking</a></li>
-                                            <li><a href="login-register.html">login / register </a></li>
+                                            <li><a href="{{route('frontend.orderTracking')}}">order tracking</a></li>
+                                            <li><a href="{{route('frontend.profile')}}">login / register </a></li>
                                         </ul>
                                     </li>
                                     <li><a href="blog.html">BLOG <i class="icon-arrow-down"></i> </a>
@@ -149,7 +149,7 @@
                 <div class="col-7">
                     <div class="header-action header-action-flex">
                         <div class="same-style-2 same-style-2-white same-style-2-hover-black same-style-2-font-inc">
-                            <a href="login-register.html"><i class="icon-user"></i></a>
+                            <a href="{{route('frontend.profile')}}"><i class="icon-user"></i></a>
                         </div>
                         <div class="same-style-2 same-style-2-white same-style-2-hover-black same-style-2-font-inc">
                             <a href="{{route('frontend.wishlist')}}"><i class="icon-heart"></i><span class="pro-count black">03</span></a>
@@ -225,15 +225,15 @@
                         </li>
                         <li class="menu-item-has-children"><a href="#">Pages</a>
                             <ul class="dropdown">
-                                <li><a href="about-us.html">about us </a></li>
+                                <li><a href="{{route('frontend.aboutUs')}}">about us </a></li>
                                 <li><a href="{{route('frontend.cart')}}">cart page</a></li>
-                                <li><a href="checkout.html">checkout </a></li>
+                                <li><a href="{{route('frontend.checkout')}}">checkout </a></li>
                                 <li><a href="my-account.html">my account</a></li>
                                 <li><a href="{{route('frontend.wishlist')}}">wishlist </a></li>
                                 <li><a href="compare.html">compare </a></li>
                                 <li><a href="{{route('frontend.contact')}}">contact us </a></li>
-                                <li><a href="order-tracking.html">order tracking</a></li>
-                                <li><a href="login-register.html">login / register </a></li>
+                                <li><a href="{{route('frontend.orderTracking')}}">order tracking</a></li>
+                                <li><a href="{{route('frontend.profile')}}">login / register </a></li>
                             </ul>
                         </li>
                         <li class="menu-item-has-children "><a href="#">Blog</a>
@@ -295,7 +295,7 @@
             </div>
             <div class="cart-checkout-btn">
                 <a class="btn-hover cart-btn-style" href="{{route('frontend.cart')}}">view cart</a>
-                <a class="no-mrg btn-hover cart-btn-style" href="checkout.html">checkout</a>
+                <a class="no-mrg btn-hover cart-btn-style" href="{{route('frontend.checkout')}}">checkout</a>
             </div>
         </div>
     </div>

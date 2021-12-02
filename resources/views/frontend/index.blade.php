@@ -103,84 +103,84 @@
                 <div class="product-plr-1">
                     <div class="single-product-wrap">
                         <div class="product-img product-img-border mb-20">
-                            <a href="shop.html">
+                            <a href="{{route('frontend.shop')}}">
                                 <img src="assets/images/product/product-50.png" alt="">
                             </a>
                         </div>
                         <div class="product-content-categories-2 text-center">
-                            <h5><a href="shop.html">Fashion</a></h5>
+                            <h5><a href="{{route('frontend.shop')}}">Fashion</a></h5>
                         </div>
                     </div>
                 </div>
                 <div class="product-plr-1">
                     <div class="single-product-wrap">
                         <div class="product-img product-img-border mb-20">
-                            <a href="shop.html">
+                            <a href="{{route('frontend.shop')}}">
                                 <img src="assets/images/product/product-51.png" alt="">
                             </a>
                         </div>
                         <div class="product-content-categories-2 text-center">
-                            <h5><a href="shop.html">Electronic</a></h5>
+                            <h5><a href="{{route('frontend.shop')}}">Electronic</a></h5>
                         </div>
                     </div>
                 </div>
                 <div class="product-plr-1">
                     <div class="single-product-wrap">
                         <div class="product-img product-img-border mb-20">
-                            <a href="shop.html">
+                            <a href="{{route('frontend.shop')}}">
                                 <img src="assets/images/product/product-52.png" alt="">
                             </a>
                         </div>
                         <div class="product-content-categories-2 text-center">
-                            <h5><a href="shop.html">computer</a></h5>
+                            <h5><a href="{{route('frontend.shop')}}">computer</a></h5>
                         </div>
                     </div>
                 </div>
                 <div class="product-plr-1">
                     <div class="single-product-wrap">
                         <div class="product-img product-img-border mb-20">
-                            <a href="shop.html">
+                            <a href="{{route('frontend.shop')}}">
                                 <img src="assets/images/product/product-53.png" alt="">
                             </a>
                         </div>
                         <div class="product-content-categories-2 text-center">
-                            <h5><a href="shop.html">beauty</a></h5>
+                            <h5><a href="{{route('frontend.shop')}}">beauty</a></h5>
                         </div>
                     </div>
                 </div>
                 <div class="product-plr-1">
                     <div class="single-product-wrap">
                         <div class="product-img product-img-border mb-20">
-                            <a href="shop.html">
+                            <a href="{{route('frontend.shop')}}">
                                 <img src="assets/images/product/product-54.png" alt="">
                             </a>
                         </div>
                         <div class="product-content-categories-2 text-center">
-                            <h5><a href="shop.html">sport</a></h5>
+                            <h5><a href="{{route('frontend.shop')}}">sport</a></h5>
                         </div>
                     </div>
                 </div>
                 <div class="product-plr-1">
                     <div class="single-product-wrap">
                         <div class="product-img product-img-border mb-20">
-                            <a href="shop.html">
+                            <a href="{{route('frontend.shop')}}">
                                 <img src="assets/images/product/product-55.png" alt="">
                             </a>
                         </div>
                         <div class="product-content-categories-2 text-center">
-                            <h5><a href="shop.html">baby</a></h5>
+                            <h5><a href="{{route('frontend.shop')}}">baby</a></h5>
                         </div>
                     </div>
                 </div>
                 <div class="product-plr-1">
                     <div class="single-product-wrap">
                         <div class="product-img product-img-border mb-20">
-                            <a href="shop.html">
+                            <a href="{{route('frontend.shop')}}">
                                 <img src="assets/images/product/product-52.png" alt="">
                             </a>
                         </div>
                         <div class="product-content-categories-2 text-center">
-                            <h5><a href="shop.html">computer</a></h5>
+                            <h5><a href="{{route('frontend.shop')}}">computer</a></h5>
                         </div>
                     </div>
                 </div>
