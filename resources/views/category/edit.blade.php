@@ -13,14 +13,14 @@
             <div class="row g-4">
                 <div class="col-lg-6">
                     <div class="form-group">
-                        <label class="form-label" for="name">Name</label>
+                        <label class="form-label" for="name">Name<span class="text-danger">*</span></label>
                         <div class="form-control-wrap">
                             <input type="text" class="form-control" id="name" name="name" placeholder="Eg. Men" value="{{$category->name}}" required>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-6">
-                    <label class="form-label" for="customFileLabel">Image</label>
+                    <label class="form-label" for="customFileLabel">Image<span class="text-danger">*</span></label>
                     <div class="form-control-wrap">
                         <div class="custom-file">
                             <input type="file" class="custom-file-input" id="customFile" name="image" >
@@ -35,7 +35,7 @@
                     <div class="form-group">
                         <label class="form-label" for="description">Description</label>
                         <div class="form-control-wrap">
-                            <textarea class="form-control" id="description" placeholder="This cate" name="description">{{$category->description}}</textarea>
+                            <textarea class="form-control" id="description" placeholder="Enter Description" name="description">{{$category->description}}</textarea>
                         </div>
                     </div>
                 </div>

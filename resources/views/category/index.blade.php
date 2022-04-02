@@ -12,6 +12,8 @@
         </div>
     </div>
 </div>
+<x-alert/>
+<div class="alert-div" id="alert"></div>
 <div class="card card-preview">
     <div class="card-inner">
         <table class="datatable-init nowrap nk-tb-list nk-tb-ulist" data-auto-responsive="false">
@@ -88,7 +90,29 @@
                 'id': id
             },
             success: function(data) {
-                console.log(data.success);
+                if (data.success) {
+                    $('#alert').html(`<div class="alert alert-success">${data.success}</div>`);
+                    window.setTimeout(function() {
+                        $('.alert').fadeTo(1000, 0).slideUp(1000, function() {
+                            $('#alert').html('');
+                        });
+                    }, 1000)
+                } else {
+                    $('#alert').html(`<div class="alert alert-danger">${data.error}</div>`);
+                    window.setTimeout(function() {
+                        $('.alert').fadeTo(1000, 0).slideUp(1000, function() {
+                            $('#alert').html('');
+                        });
+                    }, 1000)
+                }
+            },
+            error: function(data) {
+                $('#alert').html(`<div class="alert alert-danger">${data.error}</div>`);
+                window.setTimeout(function() {
+                    $('.alert').fadeTo(1000, 0).slideUp(1000, function() {
+                        $('#alert').html('');
+                    });
+                }, 1000)
             }
         });
     });
