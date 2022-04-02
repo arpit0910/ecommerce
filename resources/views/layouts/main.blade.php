@@ -10,7 +10,7 @@
     <!-- Fav Icon  -->
     <link rel="shortcut icon" href="./images/favicon.png">
     <!-- Page Title  -->
-    <title>Reinvoice Dashboard</title>
+    <title>Ecommerce Dashboard</title>
     <!-- StyleSheets  -->
     @stack('page-css')
     <link rel="stylesheet" href="{{asset('css/dashlite.css?ver=2.4.0')}}">
