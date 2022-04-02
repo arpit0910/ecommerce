@@ -65,6 +65,9 @@
     <script src="{{asset('js/scripts.js?ver=2.4.0')}}"></script>
     @stack('page-scripts')
     @stack('custom-js')
+    <script>
+        $('.ri-select').select2();
+    </script>
 </body>
 
 </html>
