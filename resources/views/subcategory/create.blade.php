@@ -12,7 +12,7 @@
             <div class="row g-4">
                 <div class="col-lg-12">
                     <div class="form-group">
-                        <label class="form-label" for="name">Category</label>
+                        <label class="form-label" for="name">Category<span class="text-danger">*</span></label>
                         <div class="form-control-wrap">
                             <select class="form form-control form-control-lg ri-select" name="category_id" data-search="on" required>
                                 <option value="" disabled selected>Select Category</option>
@@ -25,14 +25,14 @@
                 </div>
                 <div class="col-lg-6">
                     <div class="form-group">
-                        <label class="form-label" for="name">Name</label>
+                        <label class="form-label" for="name">Name<span class="text-danger">*</span></label>
                         <div class="form-control-wrap">
-                            <input type="text" class="form-control" id="name" name="name" placeholder="Men Shoes" required>
+                            <input type="text" class="form-control" id="name" name="name" placeholder="Eg. Men's Shoes" required>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-6">
-                    <label class="form-label" for="customFileLabel">Image</label>
+                    <label class="form-label" for="customFileLabel">Image<span class="text-danger">*</span></label>
                     <div class="form-control-wrap">
                         <div class="custom-file">
                             <input type="file" class="custom-file-input" id="customFile" name="image" required>
@@ -53,7 +53,7 @@
                 </div>
                 <div class="col-12">
                     <div class="form-group">
-                        <button type="submit" class="btn btn-lg btn-primary">Create Category</button>
+                        <button type="submit" class="btn btn-lg btn-primary">Add Sub Category</button>
                     </div>
                 </div>
             </div>

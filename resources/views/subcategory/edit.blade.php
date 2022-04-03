@@ -11,7 +11,7 @@
             @csrf
             @method('patch')                                                                                        
             <div class="form-group">
-                <label class="form-label" for="name">Category</label>
+                <label class="form-label" for="name">Category<span class="text-danger">*</span></label>
                 <div class="form-control-wrap">
                     <select class="form form-control form-control-lg ri-select" name="category_id" data-search="on" required>
                         <option value="" disabled selected>Select Category</option>
@@ -24,7 +24,7 @@
             <div class="row g-4">
                 <div class="col-lg-6">
                     <div class="form-group">
-                        <label class="form-label" for="name">Name</label>
+                        <label class="form-label" for="name"><span class="text-danger">*</span>Name</label>
                         <div class="form-control-wrap">
                             <input type="text" class="form-control" id="name" name="name" placeholder="Eg. Men Shoes" value="{{$subCategory->name}}" required>
                         </div>

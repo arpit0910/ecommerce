@@ -54,9 +54,9 @@ class SubCategoryController extends Controller
                 "image" => $imagename,
             ]);
             $subCategory->save();
-            return redirect(route('subcategory.index'))->with('message', 'Sub Category created successfully');
+            return redirect(route('subcategory.index'))->with('message', 'Sub Category Created Successfully');
         }
-        return redirect(route('subcategory.index'))->with('error', 'An error occured while creating category');
+        return redirect(route('subcategory.index'))->with('error', 'An error occured. Please try again.');
     }
 
     /**
@@ -106,9 +106,9 @@ class SubCategoryController extends Controller
             $subCategory->name = $request->name;
             $subCategory->description = $request->description;
             $subCategory->save();
-            return redirect(route('subcategory.index'))->with('message', 'Subcategory updated successfully');
+            return redirect(route('subcategory.index'))->with('message', 'Sub Category Updated Successfully');
         }
-        return redirect(route('subcategory.index'))->with('message', 'An error occured. Subcategory not updated');
+        return redirect(route('subcategory.index'))->with('message', 'An error occured. Please try again.');
     }
 
     /**
@@ -123,8 +123,17 @@ class SubCategoryController extends Controller
     }
     public function toggleStatus(Request $request)
     {
-        $subCategory = SubCategory::find($request->id)->update(['status' => $request->status]);
-        return response()->json(['success' => 'Status changed successfully.']);
+        $subCategory = SubCategory::where('id', $request->id)->first();
+        if ($subCategory) {
+            $subCategory->status = $request->status;
+            if ($subCategory->update()) {
+                return response()->json(['success' => 'Status Changed Successfully.']);
+            } else {
+                return response()->json(['error' => 'An error occurred. Please try again.']);
+            }
+        } else {
+            return response()->json(['error' => 'An error occurred. Please try again.']);
+        }
     }
     public function storeMedia($file, $filename)
     {
