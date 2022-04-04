@@ -5,13 +5,15 @@
 <div class="nk-block-head">
     <div class="nk-block-head-content">
         <div class="float-left">
-            <h4 class="nk-block-title">Brands List</h4>
+            <h4 class="nk-block-title">Brands</h4>
         </div>
         <div class="nk-block-des text-right">
             <a href="{{route('brand.create')}}"><button class="btn btn-primary"><em class="icon ni ni-plus"></em>&nbsp Add Brand</button></a>
         </div>
     </div>
 </div>
+<div class="alert-div" id="alert"></div>
+<x-alert />
 <div class="card card-preview">
     <div class="card-inner">
         <table class="datatable-init nowrap nk-tb-list nk-tb-ulist" data-auto-responsive="false">
@@ -76,7 +78,6 @@
         var status = $(this).prop('checked') == true ? 1 : 0;
         $.ajax({
             type: "POST",
-            dataType: "json",
             url: "{{route('brand.toggleStatus')}}",
             data: {
                 '_token': '{{csrf_token()}}',
@@ -84,7 +85,30 @@
                 'id': id
             },
             success: function(data) {
-                console.log(data.success);
+                console.log('a');
+                if (data.success) {
+                    $('#alert').html(`<div class="alert alert-success">${data.success}</div>`);
+                    window.setTimeout(function() {
+                        $('.alert').fadeTo(1000, 0).slideUp(1000, function() {
+                            $('#alert').html('');
+                        });
+                    }, 1000)
+                } else {
+                    $('#alert').html(`<div class="alert alert-danger">${data.error}</div>`);
+                    window.setTimeout(function() {
+                        $('.alert').fadeTo(1000, 0).slideUp(1000, function() {
+                            $('#alert').html('');
+                        });
+                    }, 1000)
+                }
+            },
+            error: function(data) {
+                $('#alert').html(`<div class="alert alert-danger">${data.error}</div>`);
+                window.setTimeout(function() {
+                    $('.alert').fadeTo(1000, 0).slideUp(1000, function() {
+                        $('#alert').html('');
+                    });
+                }, 1000)
             }
         });
     });

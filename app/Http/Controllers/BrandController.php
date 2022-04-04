@@ -105,7 +105,6 @@ class BrandController extends Controller
             return redirect(route('brand.index'))->with('message', 'Brand updated successfully');
         }
         return redirect(route('brand.index'))->with('error', 'An error occured while updating brand');
-
     }
 
     /**
@@ -120,8 +119,17 @@ class BrandController extends Controller
     }
     public function toggleStatus(Request $request)
     {
-        $brand = Brand::find($request->id)->update(['status' => $request->status]);
-        return response()->json(['success' => 'Status changed successfully.']);
+        $brand = Brand::where('id', $request->id)->first();
+        if ($brand) {
+            $brand->status = $request->status;
+            if ($brand->update()) {
+                return response()->json(['success' => 'Status Changed Successfully.']);
+            } else {
+                return response()->json(['error' => 'An error occurred. Please try again.']);
+            }
+        } else {
+            return response()->json(['error' => 'An error occurred. Please try again.']);
+        }
     }
     public function storeMedia($file, $filename)
     {

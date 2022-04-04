@@ -13,7 +13,7 @@
             <div class="row g-4">
                 <div class="col-lg-6">
                     <div class="form-group">
-                        <label class="form-label" for="name">Brand Name</label>
+                        <label class="form-label" for="name">Brand Name<span class="text-danger">*</span></label>
                         <div class="form-control-wrap">
                             <input type="text" class="form-control" id="name" name="name" placeholder="Eg. Men" value="{{$brand->name}}" required>
                         </div>
