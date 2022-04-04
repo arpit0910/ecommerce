@@ -101,4 +101,19 @@ class PromocodeController extends Controller
     {
         //
     }
+
+    public function toggleStatus(Request $request)
+    {
+        $promocode = Promocode::where('id', $request->id)->first();
+        if ($promocode) {
+            $promocode->status = $request->status;
+            if ($promocode->update()) {
+                return response()->json(['success' => 'Status Changed Successfully.']);
+            } else {
+                return response()->json(['error' => 'An error occurred. Please try again.']);
+            }
+        } else {
+            return response()->json(['error' => 'An error occurred. Please try again.']);
+        }
+    }
 }

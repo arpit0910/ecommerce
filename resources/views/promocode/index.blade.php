@@ -5,13 +5,15 @@
 <div class="nk-block-head">
     <div class="nk-block-head-content">
         <div class="float-left">
-            <h4 class="nk-block-title">Promocodes List</h4>
+            <h4 class="nk-block-title">Promocodes</h4>
         </div>
         <div class="nk-block-des text-right">
             <a href="{{route('promocode.create')}}"><button class="btn btn-primary"><em class="icon ni ni-plus"></em>&nbsp Add Promocode</button></a>
         </div>
     </div>
 </div>
+<x-alert />
+<div class="alert-div" id="alert"></div>
 <div class="card card-preview">
     <div class="card-inner">
         <table class="datatable-init nk-tb-list nk-tb-ulist" data-auto-responsive="false">
@@ -47,7 +49,7 @@
                         {{$promocode->end_date}}
                     </td>
                     <td class="nk-tb-col">
-                        {{$promocode->discount_amount}} {{$promocode->discount_type}} 
+                        {{$promocode->discount_amount}} {{ucfirst($promocode->discount_type)}}
                     </td>
                     <td class="nk-tb-col">
                         {{$promocode->maximum_discount}}
@@ -77,7 +79,7 @@
                 </tr><!-- .nk-tb-item  -->
                 @empty
                 <tr class="nk-tb-item">
-                    <td colspan="8" class="text-center p-2">No Records Found</td>
+                    <td colspan="9" class="text-center p-2">No Records Found</td>
                 </tr>
                 @endforelse
             </tbody>
@@ -100,7 +102,29 @@
                 'id': id
             },
             success: function(data) {
-                console.log(data.success);
+                if (data.success) {
+                    $('#alert').html(`<div class="alert alert-success">${data.success}</div>`);
+                    window.setTimeout(function() {
+                        $('.alert').fadeTo(1000, 0).slideUp(1000, function() {
+                            $('#alert').html('');
+                        });
+                    }, 1000)
+                } else {
+                    $('#alert').html(`<div class="alert alert-danger">${data.error}</div>`);
+                    window.setTimeout(function() {
+                        $('.alert').fadeTo(1000, 0).slideUp(1000, function() {
+                            $('#alert').html('');
+                        });
+                    }, 1000)
+                }
+            },
+            error: function(data) {
+                $('#alert').html(`<div class="alert alert-danger">${data.error}</div>`);
+                window.setTimeout(function() {
+                    $('.alert').fadeTo(1000, 0).slideUp(1000, function() {
+                        $('#alert').html('');
+                    });
+                }, 1000)
             }
         });
     });

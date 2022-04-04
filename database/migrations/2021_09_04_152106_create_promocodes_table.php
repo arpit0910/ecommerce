@@ -22,7 +22,7 @@ class CreatePromocodesTable extends Migration
             $table->float('min_order_amount')->nullable();
             $table->float('discount_amount');
             $table->string('discount_type');
-            $table->float('maximun_discount')->nullable();
+            $table->float('maximum_discount')->nullable();
             $table->boolean('status')->default(1);
             $table->timestamps();
         });
